@@ -16,7 +16,7 @@ const foodTypes = [
     { label: "Vegetarion only", value: "vegetarion" },
     { label: "Non-Vegetarion", value: "non_vegetarion" }
 ];
-const menu=[1,1,1,1,1,1]
+const menu=[1,1,1,]
 
 export const RestaurantDetails = () => {
     const [foodType,setFoodType]=useState("all")

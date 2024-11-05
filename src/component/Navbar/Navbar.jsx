@@ -21,12 +21,12 @@ export const Navbar = () => {
           </IconButton>
         </div>
         <div className="flex items-center justify-center h-full">
-        <Avatar sx={{ bgcolor:"white" , color:purple.A700 }}>C</Avatar>
+          <Avatar sx={{ bgcolor: "white", color: purple.A700 }}>C</Avatar>
         </div>
         <div>
           <IconButton>
             <Badge color="primary" badgeContent={3}>
-            <ShoppingCartIcon sx={{ fontSize: "1.5rem"}} />
+              <ShoppingCartIcon sx={{ fontSize: "1.5rem" }} />
             </Badge>
           </IconButton>
         </div>
