@@ -16,12 +16,12 @@ const foodTypes = [
     { label: "Vegetarion only", value: "vegetarion" },
     { label: "Non-Vegetarion", value: "non_vegetarion" }
 ];
-const menu=[1,1,1,]
+const menu = [1, 1, 1, 1]
 
 export const RestaurantDetails = () => {
-    const [foodType,setFoodType]=useState("all")
-    const handleFilter=(e)=>{
-        console.log(e.target.value,e.target.name)
+    const [foodType, setFoodType] = useState("all")
+    const handleFilter = (e) => {
+        console.log(e.target.value, e.target.name)
     }
     return (
         <div className="px-5 lg:px-20 text-white pt-7">
@@ -67,7 +67,7 @@ export const RestaurantDetails = () => {
                         <span>Mon-Sun: 9.00 AM - 9 PM (Today)</span>
                     </p>
                 </div>
-                <Divider sx={{ my: 2 }} /> 
+                <Divider sx={{ my: 2 }} />
 
             </section>
 
@@ -89,7 +89,7 @@ export const RestaurantDetails = () => {
                                 ))}
                             </RadioGroup>
                         </FormControl>
-                        <Divider/>
+                        <Divider />
                         <Typography variant="h5" sx={{ paddingBottom: "1rem" }}>
                             Food Categories
                         </Typography>
@@ -108,9 +108,9 @@ export const RestaurantDetails = () => {
                     </div>
                 </div>
 
-               
+
                 <div className="space-y-5 lg:w-[80%] lg:pl-10">
-                    {menu.map((item)=><MenuCard/>)}
+                    {menu.map((item) => <MenuCard />)}
                 </div>
             </section>
         </div>

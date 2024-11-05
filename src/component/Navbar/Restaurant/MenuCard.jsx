@@ -21,7 +21,7 @@ const demo = [
 
 
 export const MenuCard = () => {
-  const handleCheckBocChange=(value)=>{
+  const handleCheckBocChange = (value) => {
     console.log("value")
   }
   return (
@@ -53,7 +53,7 @@ export const MenuCard = () => {
                   <p>{item.category}</p>
                   <FormGroup>
                     {item.ingredients.map((item) =>
-                    <FormControlLabel control={<Checkbox onChange={()=>handleCheckBocChange(item)}/>} label={item} />
+                      <FormControlLabel control={<Checkbox onChange={() => handleCheckBocChange(item)} />} label={item} />
                     )}
 
                   </FormGroup>
@@ -64,7 +64,7 @@ export const MenuCard = () => {
           </div>
           <div className='pt-5'>
             <Button variant='contained' disabled={false} type='submit'>
-              {true?"Add to Cart" : "Out of Stock"}
+              {true ? "Add to Cart" : "Out of Stock"}
             </Button>
           </div>
         </form>

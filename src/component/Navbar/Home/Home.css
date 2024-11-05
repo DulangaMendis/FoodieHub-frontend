@@ -1,4 +1,4 @@
-.banner{
+.banner {
     background-image: url("https://media.istockphoto.com/id/1829241109/photo/enjoying-a-brunch-together.jpg?s=612x612&w=is&k=20&c=_WAbcCXxO927NToMhnQ3ERTdGXZVHPzHq7ENvzwFHj8=");
     background-size: cover;
     background-repeat: no-repeat;
@@ -6,17 +6,18 @@
     height: 90vh;
 }
 
-.cover{
+.cover {
     width: 100%;
     height: 100%;
     background-color: black;
     opacity: 0.4;
 }
- .home-paragraph{
+
+.home-paragraph {
     margin-top: 200px;
     margin-left: 400px;
     opacity: 1;
-} 
+}
 
 .carousel-container {
     max-width: 100%;

@@ -1,4 +1,3 @@
-// MultiItemCarousel.jsx
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from 'react';
@@ -27,10 +26,10 @@ export const MultiItemCarousel = () => {
         speed: 500,
         slidesToShow: 6,
         slidesToScroll: 2,
-        autoplay : true,
-        autoplaySpeed:2000,
-        arrow : false
-       
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrow: false
+
     };
 
     return (
