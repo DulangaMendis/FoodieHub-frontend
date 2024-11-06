@@ -5,6 +5,7 @@ import { RestaurantDetails } from './component/Navbar/Restaurant/RestaurantDetai
 import { Navbar } from './component/common/navbar/Navbar';
 import { Footer } from './component/common/footer/Footer';
 import { Home } from './component/Navbar/Home/Home';
+import { Cart } from './component/cart/Cart';
 
 
 
@@ -16,7 +17,8 @@ function App() {
       <CssBaseline></CssBaseline>
       <Navbar/>
        {/* <Home/> */}
-      <RestaurantDetails></RestaurantDetails> *
+      {/* <RestaurantDetails></RestaurantDetails> */}
+      <Cart></Cart>
       <Footer></Footer>
       
     </ThemeProvider>

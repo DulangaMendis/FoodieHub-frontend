@@ -26,7 +26,7 @@ export const RestaurantDetails = () => {
     return (
         <div className="px-5 lg:px-20 text-white pt-7">
             <section>
-                <h3>Home/india/Indian Fast Food/3</h3>
+                <h3>Home/SriLanka/Nishan Restaurant/3</h3>
                 <div>
                     <Grid container spacing={3} className="px-4">
                         <Grid item xs={12}>
@@ -54,13 +54,13 @@ export const RestaurantDetails = () => {
                 </div>
 
                 <div className="pt-3 pb-5">
-                    <h1 className="text-4xl font-semibold">Indian Fast Food</h1>
+                    <h1 className="text-4xl font-semibold">Nishan Restaurant</h1>
                     <p className="text-gray-500 flex items-center gap-3">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consequuntur culpa facere cumque, repellat rem perferendis ducimus officiis eum a omnis fuga illum ex. Iure obcaecati labore quas ex molestias!
                     </p>
                     <p className="text-gray-500 flex items-center gap-3 pt-4">
                         <LocationOnIcon />
-                        <span>Mumbai, Maharastra</span>
+                        <span>Unawatuna,Galle</span>
                     </p>
                     <p className="text-gray-500 flex items-center gap-3 pt-2">
                         <CalendarMonthIcon />

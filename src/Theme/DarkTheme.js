@@ -16,7 +16,7 @@ export const darkTheme = createTheme({
       paper: "#0D0D0D",
     },
     text: {
-      primary: "#111111",
+      primary: "#ffffff",
     },
 
     black: {

@@ -26,7 +26,7 @@ export const RestaurantCart = () => {
       </div>
       <div className='p-4 textPart lg:flex w-full justify-between'>
         <div className='space-y-1'>
-          <p className='font-semibold text-lg'>Indian Fast Food</p>
+          <p className='font-semibold text-lg'>Nishan Restaurant</p>
           <p className='text-gray-500 text-sm'>
             perfect for both casual lunches and intimate dinners.
           </p>
