@@ -7,6 +7,7 @@ import { Footer } from './component/common/footer/Footer';
 import { Home } from './component/Navbar/Home/Home';
 import { Cart } from './component/cart/Cart';
 import { Profile } from './component/profile/Profile';
+import { CustomerRouter } from './Routers/CustomerRouter';
 
 
 
@@ -16,11 +17,12 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline></CssBaseline>
-      <Navbar/>
-       {/* <Home/>
+      {/* <Navbar/>
+       <Home/>
       <RestaurantDetails></RestaurantDetails>
-      <Cart></Cart> */}
-      <Profile/>
+      <Cart></Cart>
+      <Profile/> */}
+      <CustomerRouter/>
       <Footer></Footer>
       
     </ThemeProvider>

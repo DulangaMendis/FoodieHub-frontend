@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 
 const menu = [
     { title: "Orders", icon: <ShoppingBagIcon /> },
-    { title: "Favorites", icon: <FavoriteIcon /> },
+    { title: "Favourites", icon: <FavoriteIcon /> },
     { title: "Address", icon: <HomeIcon /> },
     { title: "Payments", icon: <AccountBalanceWalletIcon /> },
     { title: "Notifications", icon: <NotificationsIcon /> },
