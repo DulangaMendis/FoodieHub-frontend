@@ -26,7 +26,7 @@ export const CartItem = () => {
                                 <RemoveCircleOutlineIcon></RemoveCircleOutlineIcon>
 
                             </IconButton>
-                            <div className='w-5 h-5 text-xs items-center justify-center'>
+                            <div className='w-5 h-5 text-xs items-center justify-center pt-3'>
                                 {5}
 
                             </div>
