@@ -2,6 +2,7 @@ import React from 'react'
 import "./Home.css"
 import { MultiItemCarousel } from './MultiItemCarousel'
 import { RestaurantCart } from '../Restaurant/RestaurantCart'
+import { Footer } from '../../common/footer/Footer'
 
 const restaurant = [1, 1]
 export const Home = () => {
@@ -32,6 +33,9 @@ export const Home = () => {
 
                     }
                 </div>
+            </section>
+            <section>
+                <Footer/>
             </section>
         </div>
     )
