@@ -4,7 +4,7 @@ import React from 'react';
 import Slider from "react-slick";
 import { CarouselItem } from "./CarouselItem";
 
-// Define the data array for the carousel items
+
 const topMeel = [
     { image: "https://cdn.pixabay.com/photo/2020/05/17/04/22/pizza-5179939_1280.jpg", title: "Pizza" },
     { image: "https://cdn.pixabay.com/photo/2024/08/30/14/50/ai-generated-9009466_640.png", title: "Nasi Goreng" },
@@ -19,7 +19,7 @@ const topMeel = [
 ];
 
 export const MultiItemCarousel = () => {
-    // Configure carousel settings for multiple items
+
     const settings = {
         dots: true,
         infinite: true,

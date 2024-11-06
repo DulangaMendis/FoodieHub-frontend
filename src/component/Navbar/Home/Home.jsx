@@ -35,7 +35,7 @@ export const Home = () => {
                 </div>
             </section>
             <section>
-                <Footer/>
+                <Footer />
             </section>
         </div>
     )

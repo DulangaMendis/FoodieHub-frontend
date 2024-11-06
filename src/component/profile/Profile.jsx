@@ -24,7 +24,7 @@ export const Profile = () => {
                     <Route path='/address' element={<Address />}></Route>
                     <Route path='/favourites' element={<Favourites />}></Route>
                     <Route path='/events' element={<Events />}></Route>
-                    
+
                 </Routes>
 
 

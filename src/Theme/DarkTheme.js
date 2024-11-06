@@ -23,6 +23,4 @@ export const darkTheme = createTheme({
       main: "#242B2E",
     },
   },
-}
-
-)
+});
