@@ -6,6 +6,7 @@ import { Navbar } from './component/common/navbar/Navbar';
 import { Footer } from './component/common/footer/Footer';
 import { Home } from './component/Navbar/Home/Home';
 import { Cart } from './component/cart/Cart';
+import { Profile } from './component/profile/Profile';
 
 
 
@@ -16,9 +17,10 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline></CssBaseline>
       <Navbar/>
-       {/* <Home/> */}
-      {/* <RestaurantDetails></RestaurantDetails> */}
-      <Cart></Cart>
+       {/* <Home/>
+      <RestaurantDetails></RestaurantDetails>
+      <Cart></Cart> */}
+      <Profile/>
       <Footer></Footer>
       
     </ThemeProvider>
