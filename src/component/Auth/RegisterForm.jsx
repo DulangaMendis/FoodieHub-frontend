@@ -1,11 +1,11 @@
 import React from 'react'
 import { Button, TextField, Typography } from '@mui/material'
 import { Field, Form, Formik } from 'formik'
-import { useNavigate } from 'react-router-dom'
-import InputLabel from '@mui/material/InputLabel';
+import { useNavigate } from 'react-router-dom';
 import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { useDispatch } from 'react-redux';
+import { loginUser } from '../State/Authentication/Action'
 
 const initialValues = {
     fullName: "",
@@ -17,11 +17,14 @@ const initialValues = {
 }
 
 export const RegisterForm = () => {
-    const handleSubmit = (values) => {
-        console.log("form values", values)
-
-    }
+    const dispatch = useDispatch()
     const navigate = useNavigate()
+
+    const handleSubmit = (values) => {
+        console.log("form values",values)
+        dispatch(loginUser({userData:values,navigate}))
+    }
+    
     return (
 
         <div>

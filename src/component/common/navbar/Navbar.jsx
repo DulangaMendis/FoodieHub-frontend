@@ -6,8 +6,11 @@ import { purple } from '@mui/material/colors';
 import "./Navbar.css"
 import { Person } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { store } from '../../State/store';
 
 export const Navbar = () => {
+  const {auth}=useSelector(store=>store)
   const navigate = useNavigate();
   return (
     <Box
@@ -25,7 +28,7 @@ export const Navbar = () => {
           </IconButton>
         </div>
         <div className="flex items-center justify-center h-full">
-          {false ? <Avatar sx={{ bgcolor: "white", color: purple.A700 }}>C</Avatar> :
+          {auth.user ? <Avatar sx={{ bgcolor: "white", color: purple.A700 }}>{auth.user?.fullName[0].toUpperCase()}</Avatar> :
             <IconButton onClick={() => navigate("/account/login")}>
               <Person />
             </IconButton>}

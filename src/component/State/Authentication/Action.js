@@ -13,7 +13,7 @@ import {
   REGISTER_REQUEST,
   REGISTER_SUCCESS,
 } from "./ActionType";
-import { API_URL } from "../../config/api";
+import { api, API_URL } from "../../config/api";
 
 export const registerUser = (reqData) => async (dispatch) => {
   dispatch({ type: REGISTER_REQUEST });
@@ -60,7 +60,7 @@ export const loginUser = (reqData) => async (dispatch) => {
 export const getUser = (jwt) => async (dispatch) => {
   dispatch({ type: GET_USER_REQUEST });
   try {
-    const { data } = await axios.get(`/auth/signin`, {
+    const { data } = await api.get(`/api/users/profile`, {
       headers: {
         Authorization: `Bearer ${jwt}`,
       },
@@ -98,7 +98,6 @@ export const addToFavorite =
   };
 
 export const logOut = () => async (dispatch) => {
-  dispatch({ type: ADD_TO_FAVORITE_REQUEST });
   try {
     localStorage.clear();
     dispatch({ type: LOGOUT });
